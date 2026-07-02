@@ -49,3 +49,42 @@ nav a:hover {
 .cta-button:hover {
   background-color: #2F2F2F;
 }
+
+.companies {
+    background-color: #F5F1E8;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 0rem;
+    text-align: center;
+}
+.companies h4 {
+    color: #A3B18A;
+    display: inline-block; 
+}
+.trusted-by {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    /* background-color: #2F2F2F; Why is the grid bigger than the items despite no padding - how do i get rid of teh space next to osprey - checked and it is not coming from the image itself it is coming from this area*/
+}
+
+.trusted-by img {
+    width: 60%;
+    height: auto;
+}
+.video-section {
+    background-color: #A3B18A;
+    text-align: center; /*this works on all inline block elements not just actual text so it can be used for teh video as well by turning this into an inline block element */
+    padding: 2rem;
+}
+.video-section h3 {
+    color: #F5F1E8;
+    margin-bottom: 1rem;
+}
+.video-section video {
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  border-radius: 3%;
+}
