@@ -16,6 +16,14 @@
     sans-serif;
 }
 
+:root {
+  --color-background: #F5F1E8;
+  --color-primary: #4F7942;
+  --color-secondary: #A3B18A;
+  --color-text: #2F2F2F;
+  --color-accent: #C1653B;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -32,7 +40,7 @@ header {
 .logo {
   font-size: x-large;
   font-weight: bold;
-  color: #f5f1e8;
+  color: var(--color-background);
 }
 
 header nav ul {
@@ -43,16 +51,16 @@ header nav ul {
 
 header nav a {
   text-decoration: none;
-  color: #f5f1e8;
+  color: var(--color-background);
 }
 
 header nav a:hover {
-  color: #4f7942;
+  color: var(--color-accent);
 }
 
 .cta-button {
-  background-color: #4f7942;
-  color: #f5f1e8;
+  background-color: var(--color-accent);
+  color: var(--color-background);
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
