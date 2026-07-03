@@ -170,13 +170,23 @@ header nav a:hover {
   padding: 2rem;
   color: var(--color-text);
 }
+#story {
+  text-align: center;
+}
 
 #continue {
   font-size: 1.25rem;
   padding: 0.5rem;
   position: absolute;
   bottom: 0;
-  left: 5%;
+  left: 0;
+  font-weight: bold;
+  color: rgb(14, 56, 92);
+}
+#continue:hover,
+h3:hover,
+h5:hover {
+  color: rgb(10, 92, 87);
 }
 #try-for-free {
   font-size: 1.25rem;
@@ -186,24 +196,43 @@ header nav a:hover {
   background-color: var(--color-primary);
   color: var(--color-background);
   width: 40%;
+  border-radius: 5px;
+}
+#try-for-free:hover,
+.subscription:hover {
+  background-color: #35adad;
+  color: aliceblue;
 }
 img {
   width: 60%;
   height: 40%;
 }
+@media (max-width: 768px) {
+  #homepage-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
 
-.circle {
-  border: 1px solid #67a993;
-  font-size: 0.8rem;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 6.5rem;
-  height: 6.5rem;
-  text-align: center;
-  line-height: 6.5rem;
-  text-wrap: wrap;
-  margin: 0;
+  .homepage-container1,
+  .homepage-container2 {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  #appnumber,
+  #try-for-free {
+    width: 100%;
+  }
+
+  #continue {
+    position: static;
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
 }
+
 .choose-section {
   background-color: var(--color-background);
   display: flex;
@@ -218,14 +247,11 @@ img {
   justify-content: space-around;
   justify-items: space-around;
   width: 70%;
-  /* height:40%; */
   text-wrap: wrap;
   padding: 2em;
   margin: 0 auto;
 }
-/* .grid-items {
-  width: 20%;
-} */
+
 .square-flex-container {
   display: flex;
   justify-content: center;
@@ -254,6 +280,7 @@ img {
   background-color: var(--color-accent);
   color: var(--color-background);
   text-align: center;
+  border-radius: 5px;
 }
 .square-flex-container ul {
   padding: 0;
@@ -276,7 +303,6 @@ img {
   height: auto;
 }
 
-/* Row Container for the 3 columns */
 .features-grid {
   display: flex;
   flex-direction: row;
@@ -286,7 +312,6 @@ img {
   max-width: 1100px;
 }
 
-/* Individual Feature Columns */
 .feature-item {
   display: flex;
   flex-direction: column;
@@ -294,7 +319,6 @@ img {
   flex: 0 1 25%;
 }
 
-/* Circle Icon Design */
 .circle-icon {
   width: 120px;
   height: 120px;
@@ -336,6 +360,25 @@ img {
 .price-header {
   text-align: center;
   padding: 2em;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .square-flex-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .square-flex-item {
+    width: 80%;
+    max-width: 340px;
+    box-sizing: border-box;
+  }
 }
 
 footer {
