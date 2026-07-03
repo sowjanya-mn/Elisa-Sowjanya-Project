@@ -181,12 +181,12 @@ header nav a:hover {
   bottom: 0;
   left: 0;
   font-weight: bold;
-  color: rgb(14, 56, 92);
+  color: var(--color-text);
 }
 #continue:hover,
 h3:hover,
 h5:hover {
-  color: rgb(10, 92, 87);
+  color: var(--color-background);
 }
 #try-for-free {
   font-size: 1.25rem;
@@ -200,8 +200,7 @@ h5:hover {
 }
 #try-for-free:hover,
 .subscription:hover {
-  background-color: #35adad;
-  color: aliceblue;
+  background-color: var(--color-text);
 }
 img {
   width: 60%;
