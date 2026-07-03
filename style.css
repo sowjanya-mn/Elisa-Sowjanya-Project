@@ -1,45 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    background-color: #A3B18A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  background-color: #a3b18a;
 }
 
 .logo {
-    font-size: x-large;
-    font-weight: bold;
-    color: #F5F1E8;
+  font-size: x-large;
+  font-weight: bold;
+  color: #f5f1e8;
 }
 
 nav ul {
-    display: flex;
-    gap: 2em;
-    list-style: none;
+  display: flex;
+  gap: 2em;
+  list-style: none;
 }
 
 nav a {
-    text-decoration: none;
-    color: #F5F1E8;
+  text-decoration: none;
+  color: #f5f1e8;
 }
 
 nav a:hover {
-    color: #4F7942;
+  color: #4f7942;
 }
 
 .cta-button {
-  background-color: #4F7942;
-  color: #F5F1E8;
+  background-color: #4f7942;
+  color: #f5f1e8;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
@@ -47,44 +58,190 @@ nav a:hover {
 }
 
 .cta-button:hover {
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
 }
 
 .companies {
-    background-color: #F5F1E8;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2.5rem;
-    padding-right: 0rem;
-    text-align: center;
+  background-color: #f5f1e8;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 0rem;
+  text-align: center;
 }
 .companies h4 {
-    color: #A3B18A;
-    display: inline-block; 
+  color: #a3b18a;
+  display: inline-block;
 }
 .trusted-by {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    /* background-color: #2F2F2F; Why is the grid bigger than the items despite no padding - how do i get rid of teh space next to osprey - checked and it is not coming from the image itself it is coming from this area*/
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  /* background-color: #2F2F2F; Why is the grid bigger than the items despite no padding - how do i get rid of teh space next to osprey - checked and it is not coming from the image itself it is coming from this area*/
 }
 
 .trusted-by img {
-    width: 60%;
-    height: auto;
+  width: 60%;
+  height: auto;
 }
 .video-section {
-    background-color: #A3B18A;
-    text-align: center; /*this works on all inline block elements not just actual text so it can be used for teh video as well by turning this into an inline block element */
-    padding: 2rem;
+  background-color: #a3b18a;
+  text-align: center; /*this works on all inline block elements not just actual text so it can be used for teh video as well by turning this into an inline block element */
+  padding: 2rem;
 }
 .video-section h3 {
-    color: #F5F1E8;
-    margin-bottom: 1rem;
+  color: #f5f1e8;
+  margin-bottom: 1rem;
 }
 .video-section video {
   width: 50%;
   height: auto;
   display: inline-block;
   border-radius: 3%;
+}
+.homepage-container1 {
+  border: 1px solid #ccc;
+  width: 40%;
+  height: auto;
+  padding: 1rem;
+  background-color: #c8d6d2;
+  border-radius: 5px;
+}
+.homepage-container2 {
+  border: 1px solid #ccc;
+  width: 30%;
+  height: auto;
+  background-image: url("/adventurepic1.jpg");
+  /* background-attachment: fixed; */
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+#homepage-section {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  padding: 3rem;
+}
+#appnumber {
+  font-size: 0.9rem;
+  background-color: #8dcbb5;
+  width: 50%;
+  text-align: center;
+  padding: 0.5rem;
+}
+#escape-ordinary {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: left;
+}
+#discover {
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.5rem;
+}
+#tagline {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+#continue {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+#try-for-free {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #8dcbb5;
+  width: 40%;
+}
+img {
+  width: 60%;
+  height: 40%;
+}
+.flex-container1 {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  width: 100%;
+}
+.circle {
+  border: 1px solid #67a993;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 6.5rem;
+  height: 6.5rem;
+  text-align: center;
+  line-height: 6.5rem;
+  text-wrap: wrap;
+  margin: 0;
+}
+.flex-container2 {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  gap: 2%;
+  width: 100%;
+  text-wrap: wrap;
+}
+.grid-items {
+  width: 20%;
+}
+.square-flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  height: auto;
+}
+.square-flex-item {
+  border: 1px solid #ccc;
+  width: 18%;
+  height: 15rem;
+  background-color: #c8d6d2;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+.subscription {
+  font-weight: bold;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 3.5em;
+  padding: 0.5rem;
+  background-color: #8dcbb5;
+  text-align: center;
+}
+.square-flex-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.square-flex-item div:first-child {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.choose-div {
+  padding: 4rem;
+  text-align: center;
 }
