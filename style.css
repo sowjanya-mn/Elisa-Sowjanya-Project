@@ -26,7 +26,7 @@ header {
   padding-right: 1rem;
   background-color: #a3b18a;
   gap: 12px;
-  /*at a certain size the button moved slightly off screen and is no longer affected by teh background color but teh button is in teh header in the html so how can a certain screen size make teh background color not apply? */
+  /*at a certain size the button moved slightly off screen and is no longer affected by the background color but the button is in the header in the html so how can a certain screen size make the background color not apply? */
 }
 
 .logo {
@@ -79,7 +79,7 @@ header nav a:hover {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
-  /* background-color: #2F2F2F; Why is the grid bigger than the items despite no padding - how do i get rid of teh space next to osprey - checked and it is not coming from the image itself it is coming from this area*/
+  /* background-color: #2F2F2F; Why is the grid bigger than the items despite no padding - how do i get rid of the space next to osprey - checked and it is not coming from the image itself it is coming from this area*/
 }
 
 .trusted-by img {
@@ -88,7 +88,7 @@ header nav a:hover {
 }
 .video-section {
   background-color: #a3b18a;
-  text-align: center; /*this works on all inline block elements not just actual text so it can be used for teh video as well by turning this into an inline block element */
+  text-align: center; /*this works on all inline block elements not just actual text so it can be used for the video as well by turning this into an inline block element */
   padding: 2rem;
 }
 .video-section h3 {
